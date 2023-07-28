@@ -1,0 +1,418 @@
+/* poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-col:#3eb0f1;
+    --white-col:#fff;
+    --black-col:#000;
+}
+
+
+/* navbar */
+.edumetfis-navbar{
+    padding: 20px 10px;
+}
+.edumetfis-navbar img{
+    width: 160px;
+}
+.edumetfis-navbar .nav-left-btn{
+    background-color: var(--primary-col);
+    padding: 10px 30px;
+    color: var(--white-col);
+    text-decoration: none;
+    border-radius: 5px;
+}
+.edumetfis-navbar .nav-item .nav-link{
+    color:var(--black-col);
+    font-size: 16px;
+    padding: 10px 15px;
+}
+.edumetfis-navbar .nav-item .nav-link.active{
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+/* inner page banner */
+.pg-banner{
+    background-image: url('../images/banner-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 320px;
+    padding-top: 100px;
+    position: relative;
+}
+.pg-banner .head{
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+}
+.pg-banner .pages-link{
+    display: flex;
+    justify-content: center;
+}
+.pg-banner .pages-link .active-link{
+    color: var(--black-col);
+    text-decoration: none;
+}
+.pg-banner .pages-link .non-link{
+    color: #817b7b;
+
+}
+.book-icon{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 70px;
+    animation: upDown 4s infinite;
+
+}
+.cap-icon{
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    width: 80px;
+        animation: upDown 4s infinite;
+}
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+/* contact page */
+
+.contact-pg-form-section{
+    padding: 100px 10px;
+}
+.contact-pg-form-section .contact-form{
+    padding: 80px 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: var(--white-col);
+    position: relative;
+    z-index: 10;
+    border-radius: 10px;
+}
+
+.contact-pg-form-section .contact-form .head{
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.contact-form .input-form{
+    border-bottom: 1px solid rgb(201 201 201);
+    width: 98%;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.contact-form .input-form input{
+    border-style: none;
+    outline: none;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 14px;
+    color: gray;
+}
+.contact-form .input-form textarea{
+    border-style: none;
+    outline: none;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 14px;
+    color: gray;
+}
+.contact-form .input-form i{
+    color: #bebdbd;
+}
+.contact-form .contact-btn{
+    background-color: var(--primary-col);
+    padding: 10px 40px;
+    color: var(--white-col);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.get-in-touch-box{
+    border-left: 1px solid  rgb(201 201 201);
+    padding-left: 40px;
+}
+.details-box{
+    margin-top: 20px;
+}
+.details-box p{
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    color: gray;
+}
+.details-box i{
+    color:  #bebdbd;
+}
+.details-box .details{
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+.contact-map-section iframe{
+    margin-top: -200px;
+    height: 500px;
+    z-index: -1;
+    margin-bottom: -8px;
+}
+
+
+/* footer */
+.footer-section{
+    padding: 100px 10px 10px;
+    position: relative;
+    background-image: url('../images/footer-image.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 11;
+}
+
+.footer-section::after{
+    content: '';
+    background-color: #3eb0f1ed;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.footer-news-letter{
+    padding: 50px;
+    background-color: #007CB9;
+    border-radius: 20px;
+    margin-bottom: 80px;
+}
+.footer-news-letter h3{
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 600;
+    color: var(--white-col);
+}
+.footer-news-letter p{
+    color: var(--white-col);
+    margin-top: 20px;
+}
+.footer-news-letter .input-box{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-news-letter .input-box input{
+    width: 70%;
+    padding: 9px 20px;
+    border-style: none;
+    border-radius: 25px;
+    outline: none;
+}
+
+
+.footer-news-letter .input-box a{
+    padding: 10px 40px;
+    background-color: #5db1ed;
+    color: var(--white-col);
+    border-radius: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+
+
+.footer-desc{
+    color: var(--white-col);
+    margin-top: 20px;
+}
+.ftr-sm-icons{
+    display: flex;
+    align-items: center;
+}
+
+.ftr-sm-icons i{
+    margin-right: 20px;
+    color: var(--white-col);
+    font-size: 20px;
+}
+.ftr-links-head{
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--white-col);
+    font-weight: 600;
+    margin-bottom: 30px;
+
+}
+.ftr-links{
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--white-col);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.ftr-links:hover{
+    color: rgb(211, 204, 204);
+}
+.time{
+    color: var(--white-col);
+}
+.time i{
+    margin-right: 10px;
+}
+
+.footer-hr{
+    color: var(--white-col);
+    margin-top: 50px;
+}
+.copyrigt-text{
+    text-align: center;
+    color: var(--white-col);
+}
+
+/* media screen */
+
+
+/* pad */
+@media only screen and (max-width:999px){
+    .get-in-touch-box{
+        border-style: none;
+        padding-left: 0;
+        margin-top: 50px;
+        padding: 10px 20px;
+    }
+    .contact-map-section iframe{
+        height: 400px;
+        margin-bottom: -8px;
+    }
+    .ftr-sm-icons{
+        margin-bottom: 10px;
+    }
+    .ftr-links-head{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .footer-hr{
+        margin-top: 40px;
+    }
+    .edumetfis-navbar .nav-left-btn{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+/* mobile */
+@media  only screen and (max-width:767px){
+    .pg-banner{
+        min-height: 220px;
+        padding-top: 70px;
+    }
+    .book-icon {
+        top: 18%;
+        left: 10%;
+        width: 40px;
+    }
+    .cap-icon {
+        width: 55px;
+    }
+    .edumetfis-navbar .nav-left-btn{
+        display: none;
+    }
+    .contact-pg-form-section{
+        padding: 50px 5px;
+    }
+    .contact-pg-form-section .contact-form{
+        padding: 50px 20px 20px;
+    }
+    .contact-pg-form-section .contact-form .head{
+        font-size: 26px;
+    }
+    .contact-form .input-form{
+        margin-top: 20px;
+    }
+    .contact-form .contact-btn{
+        margin-top: 0;
+    }
+    .get-in-touch-box{
+        border-style: none;
+        padding: 40px 20px;
+    }
+    .pg-banner .head {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .pg-banner .pages-link .non-link{
+        font-size: 14px;
+    }
+    .pg-banner .pages-link .active-link{
+        font-size: 14px;
+    }
+    .contact-map-section iframe{
+        margin-top: -120px;
+        height: 320px;
+        margin-bottom: -8px;
+    }
+
+    .footer-news-letter h3 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .footer-news-letter .input-box{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-news-letter .input-box input{
+        width: 100%;
+        padding: 8px 20px;
+    }
+    .footer-news-letter {
+        padding: 40px 20px;
+        background-color: #007CB9;
+        border-radius: 20px;
+        margin-bottom: 40px;
+    }
+    .footer-news-letter .input-box a{
+        margin-left: 0;
+        margin-top: 10px;
+        font-size: 14px;
+        padding: 8px 25px;
+    }
+    .footer-section{
+        padding: 60px 10px 10px;
+    }
+    .copyrigt-text{
+        font-size: 14px;
+    }
+}
