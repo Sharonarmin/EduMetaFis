@@ -82,7 +82,8 @@
     right: 10%;
     bottom: 10%;
     width: 80px;
-        animation: upDown 4s infinite;
+    animation: upDown 4s infinite;
+    animation-delay: 2s;
 }
 @keyframes upDown {
     0% {
@@ -184,7 +185,6 @@
     margin-bottom: -8px;
 }
 
-
 /* footer */
 .footer-section{
     padding: 100px 10px 10px;
@@ -246,8 +246,6 @@
     text-decoration: none;
 }
 
-
-
 .footer-desc{
     color: var(--white-col);
     margin-top: 20px;
@@ -297,7 +295,191 @@
     color: var(--white-col);
 }
 
+
+/* blog page */
+
+.blog-section{
+    padding: 100px 20%;
+}
+.edumetafis-blog-card {
+    margin: 10px 0px 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.blog-img{
+    position: relative;
+    overflow: hidden;
+}
+.edumetafis-blog-card .blog-img img{
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    transition: all .3s ease-in-out;
+}
+.edumetafis-blog-card .blog-img:hover img{
+    transform: scale(1.1);
+}
+.edumetafis-blog-card .category-badge{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    background-color: var(--primary-col);
+    color: var(--white-col);
+    padding: 3px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.edumetafis-blog-card .blog-desc{
+    padding: 20px;
+}
+.edumetafis-blog-card .blog-desc .blog-head{
+    font-size: 20px;
+    font-weight: 600;
+}
+ .edumetafis-blog-card .blog-date-button{
+    padding: 0px 22px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--primary-col);
+
+ }
+ .edumetafis-blog-card .blog-date-button .read-more-btn{
+    color: var(--black-col);
+    text-decoration: none;
+ }
+
+ .edumetafis-blog-card .blog-date-button .read-more-btn:hover{
+    color: var(--primary-col);
+
+ }
+
+/* blog inner page */
+
+.blog-inner-pg-section{
+    padding: 100px 10px;
+}
+.blog-inner-pg-section .top-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog-inner-pg-section .top-section .name{
+    color: var(--primary-col);
+    font-size: 16px;
+}
+.blog-inner-pg-section .top-section .date{
+    color: #999999;
+}
+.blog-inner-pg-section .heading{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+.blog-inner-pg-section .blog-img img{
+    height: 600px;
+    margin-top: 20px;
+    border-radius: 30px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog-inner-pg-section .blog-content{
+    margin-top: 30px;
+}
+
+.related-blogs-btm{
+    padding: 0 50px;
+    margin-bottom: 80px;
+}
+
+
+/* partners and investors section */
+.partners-investors-section{
+    padding: 100px 10px;
+}
+
+.partners-investors-section .main-head{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+}
+.our-partners-section{
+    padding-top: 80px;
+}
+.our-partners-section .partners-img{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.our-partners-section .partners-img img{
+    width: 300px;
+}
+.investors-section{
+    padding-top: 60px;
+}
+.investors-section .investors-img{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.investors-section .investors-img div{
+    display: flex;
+    justify-content: center;
+}
+.career-section{
+    padding: 100px 10px;
+}
+.career-section .career-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top:1px solid #cdc8c8bd ;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.career-section .career-box:last-child{
+    border-bottom:1px solid #cdc8c8bd ;
+
+}
+.career-section .career-box .left-section h4{
+    font-size: 24px;
+    font-weight: 600;
+}
+.career-section .career-box .job-prefernces{
+    display: flex;
+    justify-content: start;
+}
+.career-section .career-box .job-prefernces .preference-box{
+    border: 1px solid rgba(207, 200, 200, 0.747);
+    padding: 4px 14px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+.career-section .career-box .right-section .apply-btn{
+    text-decoration: none;
+    color: var(--black-col);
+}
+
+
+
 /* media screen */
+
+@media only screen and (max-width:1640px){
+    .blog-section{
+        padding: 50px 30px;
+    }
+}
 
 
 /* pad */
@@ -325,12 +507,45 @@
     .edumetfis-navbar .nav-left-btn{
         display: none;
     }
+    .blog-section{
+        padding: 50px 0;
+    }
+    .blog-inner-pg-section{
+        padding: 50px 10px;
+    }
+    .blog-inner-pg-section .blog-img img{
+        height: 340px;
+    }
+    .related-blogs-btm{
+        padding: 0px;
+    }
+    .our-partners-section .partners-img{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .our-partners-section .partners-img img{
+        width: 330px;
+        margin-bottom: 20px;
+    }
+    .investors-section .investors-img{
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    .investors-section .investors-img img{
+        margin-bottom: 20px;
+    }
+    .career-section .career-box{
+        flex-direction: column;
+        align-items: start;
+    }
+    .career-section .career-box .right-section .apply-btn{
+        margin-top: 30px;
+        display: block;
+    }
+    .career-section .career-box .left-section p{
+        font-size: 14px;
+    }
+
 }
-
-
-
-
-
 
 
 /* mobile */
@@ -370,7 +585,7 @@
         padding: 40px 20px;
     }
     .pg-banner .head {
-        font-size: 28px;
+        font-size: 22px;
         line-height: 34px;
     }
     .pg-banner .pages-link .non-link{
@@ -415,4 +630,50 @@
     .copyrigt-text{
         font-size: 14px;
     }
+    .blog-section{
+        padding: 50px 10px;
+    }
+    .blog-inner-pg-section .heading{
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    .blog-inner-pg-section .blog-img img{
+        height: 240px;
+    }
+    .blog-inner-pg-section .blog-content{
+        margin-bottom: 15px;
+    }
+    .related-blogs-btm{
+        margin-bottom: 40px;
+    }
+    .our-partners-section .partners-img img {
+        width: 160px;
+        margin-bottom: 20px;
+    }
+    .investors-section .investors-img {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .partners-investors-section{
+        padding: 50px 10px;
+    }
+    .our-partners-section{
+        padding-top: 50px;
+    }
+    .career-section{
+        padding: 50px 10px;
+    }
+    .career-section .career-box .left-section p{
+        font-size: 14px;
+    }
+    .career-section .career-box .job-prefernces{
+        font-size: 14px;
+    }
+    .career-section .career-box .right-section .apply-btn{
+        margin-top: 20px;
+        display: block;
+        font-size: 14px;
+    }
+
 }

@@ -36,10 +36,10 @@
                         <a class="nav-link" href="#">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Courses</a>
+                        <a class="nav-link" href="blog.php">Blogs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="contact.php">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -203,7 +203,7 @@
                 </div>
             </div>
             <hr class="footer-hr">
-            <p class="copyrigt-text">Copyright © 2023 V Trust. All Rights Reserved | Designed by Mentegoz Technologies</p>
+            <p class="copyrigt-text">Copyright © 2023 Edumetafis. All Rights Reserved | Designed by Mentegoz Technologies</p>
         </div>
     </div>
     <!-- footer end -->
